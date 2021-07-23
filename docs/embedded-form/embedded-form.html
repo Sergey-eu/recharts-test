@@ -137,6 +137,7 @@
       margin-right: 18px;
       position: relative;
       cursor: pointer;
+      -moz-appearance: initial;
     }
 
     input[type="radio"]::after {
@@ -153,7 +154,8 @@
       transition: 0.33s;
       position: absolute;
       top: -8px;
-      left: -10px;
+      left: -10px; 
+      -moz-appearance: initial;
     }
 
     input[type="radio"]:checked::after {
@@ -242,8 +244,7 @@
     }
 
     input[type="file"]::file-selector-button {
-      visibility: hidden;
-      position: absolute;
+      margin-bottom: 10px;
     }
 
     input[type="file"]::-ms-browse {
