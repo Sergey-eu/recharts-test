@@ -136,6 +136,7 @@ input[type="radio"]::after {
   position: absolute;
   top: -8px;
   left: -10px;
+  -moz-appearance: initial;
 }
 
 input[type="radio"]:checked::after {
@@ -151,6 +152,7 @@ input[type="checkbox"] {
   margin-right: 18px;
   position: relative;
   cursor: pointer;
+  -moz-appearance: initial;
 }
 
 input[type="checkbox"]::after {
@@ -223,8 +225,7 @@ input[type="file"]::-webkit-file-upload-button {
 }
 
 input[type="file"]::file-selector-button {
-  visibility: hidden;
-  position: absolute;
+  margin-bottom: 10px;
 }
 
 input[type="file"]::-ms-browse {
