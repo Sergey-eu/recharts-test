@@ -118,6 +118,7 @@ input[type="radio"] {
   margin-right: 18px;
   position: relative;
   cursor: pointer;
+  -moz-appearance: initial;
 
   &::after {
     content: '';
@@ -150,6 +151,7 @@ input[type="checkbox"] {
   margin-right: 18px;
   position: relative;
   cursor: pointer;
+  -moz-appearance: initial;
 
   &::after {
     content: '';
@@ -222,8 +224,7 @@ input[type="file"] {
   }
 
   &::file-selector-button {
-    visibility: hidden;
-    position: absolute;
+    margin-bottom: 10px;
   }
 
   &::-ms-browse {
